@@ -1,0 +1,58 @@
+App.Views.CategoryListView= Backbone.View.extend({
+	 initialize: function(){
+        var that = this;
+        this.categoryList = this.options.categoryList;
+        this._categoryListViews = [];
+        this.categoryList.each(function(category){
+            that._categoryListViews.push(new App.Views.CategoryItemView (
+                {
+                    model:category
+                })
+            );
+        });
+        this.render();
+    },
+    
+    events: function(){
+        
+    },
+	
+	render: function(){
+		var self = this;
+		$(this.el).empty();
+        $(that.el).append(ich.categoryUnorderedList());
+        console.log("in render function for category list");
+        _(this._categoryListViews).each(function(categoryItemView) {
+             //console.log("the view is ", categoryItemView);
+            $("#categoryItemUnorderedList").append(categoryItemView.render().el);
+        });
+        var pageCount =  this.categoryList.length;
+        console.log("the following breadcrumb container is ",$("#following_breadcrumbs_popular"));
+        ul = $("#categoryItemUnorderedList") ;
+		var elements_to_be_added = 5-(pageCount%5 );
+		        console.log("the elements to be added are ", elements_to_be_added);
+        if(elements_to_be_added%5 != 0){
+            for(i=0;i<elements_to_be_added;i++){
+                ul.append(ich.followingEmptyTemplate());
+            }
+            pageCount = pageCount+elements_to_be_added;
+            console.log("the pagecount is ",pageCount);
+        }
+        for (i=0;i<pageCount;i++)
+        {
+            if(i%5 == 0){
+                console.log("adding the "+i+" button");
+                $("#following_breadcrumbs_popular").append('<div class="popular_crumb" > </div>');
+            }
+            else{
+                console.log("adding the "+i+" button");
+                $("#following_breadcrumbs_popular").append('<div class="popular_crumb popular_crumb_hidden" > </div>');
+            }
+        }
+        var pages = Math.ceil(pageCount/5);
+        console.log("the text for count is ","1/"+pages)
+        $('#following_page_count_popular').html("Page 1/"+pages);
+        
+	}
+
+})

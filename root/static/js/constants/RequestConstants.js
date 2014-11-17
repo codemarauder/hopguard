@@ -1,0 +1,56 @@
+		URL_USER_INFO = '/admin/user/loggedin';
+		URL_LOGGED_USER = "/admin/user/loggedin"
+		URL_USERS_LIST = "/admin/user/list"
+		URL_GROUPS_LIST = "/admin/group/list"
+		URL_CATEGORY_LIST = "/admin/category/list"
+		URL_LOCATION_LIST = "/admin/location/list"
+		URL_POLICY_LIST = "/admin/policy/list"
+		URL_CUSTOMER_DETAILS = "/admin/customer/details"
+		URL_CATEGORY_DETAILS = "/admin/category/get_details"
+		URL_LOGOUT = serverEndPoint + '/logout';
+/**    URL_LOGIN_ANONYMOUS = serverEndPoint + 'users/anonymous';
+    URL_POPULAR_DEALS = serverEndPoint +  'getPopularDeals';
+    URL_DELIGHT_SIGNUP = serverEndPoint + 'users/signup';
+    URL_LOGOUT = serverEndPoint + 'users/logout';
+    URL_LOGIN = serverEndPoint + 'users/login';
+    URL_GPLACE_INFO = serverEndPoint + 'gplaces';
+    URL_PLACE = serverEndPoint + 'places/';
+    URL_DEALS = serverEndPoint +'deals/';  
+    URL_FEATURED = serverEndPoint+'featured/';
+    //URL_PLACE_INFO = serverEndPoint + 'places/';
+    //URL_PLACE_DEALS = serverEndPoint + 'places/';
+    //URL_PLACE_REVIEWS = serverEndPoint + 'places/';
+    //URL_PLACE_FEATURED = serverEndPoint + 'places/';
+    URL_PLACE_NEW_REVIEW = serverEndPoint + 'reviews';
+    URL_FOLLOWING_STORES = serverEndPoint + 'users/self/followingStores';
+    URL_RECOMMENDED_STORES = serverEndPoint +'users/self/recommendedStores';
+    URL_SUGGESTED_STORES = serverEndPoint + 'users/self/suggestedStores';
+    URL_FOLLOW_STORE = serverEndPoint +'stores/'; // ADD this to serverCommunication
+    URL_UNFOLLOW_STORE = serverEndPoint + 'stores/'; // ADD this to serverCommunication
+    URL_ADD_DEAL_TO_WISHLIST = serverEndPoint + 'wishlist/deal'; 
+    URL_ADD_FEATURED_TO_WISHLIST = serverEndPoint + 'wishlist/featured';
+    URL_REMOVE_FROM_WISHLIST = serverEndPoint +'/wishlist/remove';
+    URL_USER_INFO = serverEndPoint + 'users/self/info'; 
+    URL_GET_WISHLIST = serverEndPoint + 'users/self/wishlist';
+    URL_USER_FEED = serverEndPoint +'users/self/activity'; 
+    URL_FB_USER_LOGIN = serverEndPoint +'users/fbConnect';
+    URL_CHECK_FB_USER = serverEndPoint + '/users/checkIfFbUserExists';//add email part of json body 
+    URL_OFFER_SEARCH = serverEndPoint + 'offers/search';
+    URL_SEARCH_PLACES = serverEndPoint + 'places/search'
+    URL_RECENT_REVIEWS = serverEndPoint + 'reviews/recent' //reviews/recent?city=Bangalore&count=3
+    URL_PLACE_SUGGESTIONS = serverEndPoint+'/places/suggestions?key='+DELIGHT_API_KEY;
+    URL_OFFER_SUGGESTIONS = serverEndPoint+'/offers/suggestions?key='+DELIGHT_API_KEY;
+    URL_LOCALITY_SUGGESTIONS = serverEndPoint+'/localities/suggestions?key='+DELIGHT_API_KEY;
+    URL_SET_LOCATION = serverEndPoint+'users/setLocation';
+    URL_VIEWS_UPDATE = serverEndPoint + 'postViewsUpdate';
+    URL_REWARDS_ALL = serverEndPoint+ 'rewards/getAll';
+    URL_REWARDS_REDEEM = serverEndPoint + 'rewards/self';
+    URL_USER = serverEndPoint + 'users/' ;
+    URL_SEND_FORGOT_PASSWORD = serverEndPoint +'users/fg_password';
+    URL_RESET_PASSWORD = serverEndPoint +'users/reset_password/';
+    URL_UPDATE_PHONE = serverEndPoint +  'users/update';
+    URL_CHANGE_PASSWORD = serverEndPoint + 'users/self/changePassword';
+    URL_PARTNER_QUERY = serverEndPoint + 'partners';
+    URL_REQUEST_INVITE = serverEndPoint + 'invite';
+    URL_SEND_DOWNLOAD_LINK = serverEndPoint +'share/download';
+    URL_BRAND_SEARCH = serverEndPoint + 'brand'; **/
